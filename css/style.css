@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(17, 17, 31);
+    color:white;
+
+}
+
+p{
+    margin: 10px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    background-color: rgb(242, 189, 44);
+    padding: 0;
+    margin-bottom: 25px;
+    
+}
+header img{
+    width: 10%;
+
+}
+
+header nav{
+    width: 100%;
+}
+
+header ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+header a{
+    color:white;
+    text-decoration: none;
+    padding: 20px;
+    transition: all 0.5s ease-in-out;
+}
+header a:hover{
+    color: white;
+    background-color:rgb(17, 17, 31);
+}
+
+main{
+    text-align: center;
+    padding: 20px 0px;
+}
+
+main img{
+    border-radius: 20%;
+    /* width: 70%; */
+    transition: all 0.5s ease-in-out;
+    animation: imageRotate 2s ;
+
+}
+
+@keyframes imageRotate{
+    from{
+        transform: scale(0) translateX(-100%) translateY(-100%) rotate(1080deg);
+    }
+    to{
+        transform: scale(100%) translateX(0) translateY(0%) rotate(0);
+    }
+}
+
+img:hover{
+    filter: saturate(0);
+}
+p::after{
+    content: ' Bem Gelada!';
+    color:rgb(242, 189, 44);
+}
+
+.container{
+    padding: 0% 30%;
+}
+
+fieldset{
+    padding: 15px;
+}
+
+legend{
+    text-align: left;
+    margin-left: 15px;
+    padding: 0px 10px;
+}
+
+label{
+    padding-bottom: 10px;
+}
+input[type="email"], input[type="tel"]{
+    padding: 1%;
+    margin-bottom: 10px;
+    width: 83.3%;
+}
+input{
+    transition: all 0.5s ease-in-out;
+}
+
+input, textarea{
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+input:hover, textarea:hover, input:focus, textarea:focus{
+    transform: scale(1.1);
+    background-color: rgb(240, 214, 142);
+}
+
+textarea{
+    margin-bottom: 10px;
+    width: 85%;
+}
+
+fieldset + fieldset{
+    margin: 10px 0;
+}
+
+fieldset:nth-child(1) label{
+    display: block;
+}
+fieldset:last-of-type{
+    margin-bottom: 15px;
+}
+
+button{
+    padding: 1.5%;
+    background-color: rgb(242, 189, 44);
+    border: 2px solid transparent;
+    border-radius: 10%;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+button:hover{
+    background-color: white;
+    border-color: white;
+}
+
+
+

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Flavicon-->
+    <link rel="icon shortcut" href="img/logotipo.png">
+
+    <!-- Google fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <!-- CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Bem Gelada!</title>
+</head>
+
+<body>
+    <header>
+        <img src="./img/logotipo.png" alt="Logo Bem Gelada">
+        <nav>
+            <ul>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Estabelecimentos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <img src="./img/logotipo.png" alt="Logotipo">
+            <p>Peça sua bebida,</p>
+
+            <!-- Inicio do formulario -->
+            <form action="#" method="post">
+
+                <!-- Seção de dados pessoais -->
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" name="telefone" id="telefone">
+
+                    <label for="endereco">Endereço:</label>
+                    <textarea name="endereco" id="endereco" cols="30" rows="5"></textarea>
+                </fieldset>
+
+                <!-- Seção Bebidas -->
+                <fieldset>
+                    <legend>Escolha sua bebida</legend>
+                    <select name="bebidas" id="bebidas">
+                        <option value="">Selecione uma opção</option>
+                        <optgroup label="Cerveja">
+                            <option value="budweiser">Budweiser</option>
+                            <option value="skol">Skol</option>
+                            <option value="heineken">Heineken</option>
+                            <option value="stella artois">Stella Artois</option>
+                        </optgroup>
+                        <optgroup label="Refrigerante">
+                            <option value="coca cola">Coca Cola</option>
+                            <option value="fanta laranja">Fanta Laranja</option>
+                            <option value="guarana artarctica">Guarana Artarctica</option>
+                            <option value="sprite">Sprite</option>
+                        </optgroup>
+                        <optgroup label="Água">
+                            <option value="agua indaia">Água Indaiá</option>
+                            <option value="agua minalba">Água Minalba</option>
+                        </optgroup>
+                    </select>
+                </fieldset>
+
+                <!-- Seção Salgadinhos -->
+                <fieldset>
+                    <legend>Escolha uma opção</legend>
+                    <select name="opcao" id="opcao">
+                        <option value="">Selecione uma opção</option>
+                        <option value="ruffles">Ruffles</option>
+                        <option value="doritos">Doritos</option>
+                        <option value="fandangos">Fandangos</option>
+                        <option value="chettos">Chettos</option>
+                    </select>
+                </fieldset>
+
+                <!-- Seção opcionais -->
+                <fieldset>
+                    <legend>Opcionais</legend>
+                    <input type="checkbox" name="copo" id="copo">
+                    <label for="copo">Copo</label>
+                    <input type="checkbox" name="guardanapo" id="guardanapo">
+                    <label for="guardanapo">Guardanapo</label>
+                    <input type="checkbox" name="canudo" id="canudo">
+                    <label for="canudo">Canudo</label>
+                </fieldset>
+
+                <!-- Seção Pagamento -->
+                <fieldset>
+                    <legend>Método de Pagamento</legend>
+                    <input type="radio" name="pagamento" id="dinheiro" value="dinheiro" checked>
+                    <label for="dinheiro">Dinheiro</label>
+                    <input type="radio" name="pagamento" id="debito" value="debito" checked>
+                    <label for="debito">Débito</label>
+                    <input type="radio" name="pagamento" id="credito" value="credito" checked>
+                    <label for="credito">Crédito</label>
+                </fieldset>
+
+                <!-- Observaçoes -->
+                <fieldset>
+                    <legend>Observação</legend>
+                    <textarea name="observacao" id="observacao" cols="30" rows="5"></textarea>
+                </fieldset>
+
+                <!-- Seção Botoes -->
+                <button type="submit">Enviar</button>
+                <button type="reset">Cancelar</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
